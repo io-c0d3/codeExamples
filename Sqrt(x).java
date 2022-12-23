@@ -1,6 +1,6 @@
 // Find the square root of x, without using exponent functions (pow(x, 0.5) or x ** 0.5).
 // This took a bit of time and work, but im very happy with the result, which according to LeetCodes
-// (not particularly accurate) system took <1ms and is in the top 25% or so.
+// (not particularly accurate) system took 1 - 3ms.
 
 class Solution {
     public int mySqrt(int x) {
