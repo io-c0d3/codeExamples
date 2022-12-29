@@ -17,6 +17,8 @@
  * }
  */
 class Solution {
+    // Store a number that wont be found within the tree.
+    private int outsideBounds = -10001;
     // Create two ArrayLists to hold the Integer values of each node.
     List<Integer> firstList = new ArrayList<Integer>();
     List<Integer> secondList = new ArrayList<Integer>();
@@ -36,10 +38,10 @@ class Solution {
             return; 
         } 
         // If the left node is not null, add -99 to the list and then recursively call this method. Adding
-        // the -99 means we keep track of every time the method goes left, so even if we have tricky trees that
+        // the -10001 means we keep track of every time the method goes left, so even if we have tricky trees that
         // create an incredibly similar result, we know if the shape is the same as well as the resulting values.
         if (root.left != null){
-            list.add(-99);
+            list.add(outsideBounds);
             traverse(root.left, list);
         } 
         // Add the value of the node.
