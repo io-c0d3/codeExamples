@@ -16,7 +16,7 @@
  *     }
  * }
  */
-// I needed to use a solution to figure this one out. I couldnt really make sense of it.
+// I needed to use a solution to figure this one out. I couldnt really make sense of it. I will come back to binary trees.
 class Solution {
 
     public boolean isBalanced(TreeNode root) {
